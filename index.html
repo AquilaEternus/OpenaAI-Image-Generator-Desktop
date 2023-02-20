@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self'" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>OpenAI Image Generator Desktop</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="form" class="form">
+        <input
+          type="text"
+          name="prompt"
+          id="prompt"
+          placeholder="Penguin riding a scooter..."
+        />
+        <select id="size">
+          <option value="256x256">256x256</option>
+          <option value="512x512">512x512</option>
+          <option value="1024x1024">1024x1024</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <br />
+    <div class="img-container">
+      <div id="error" class="error"></div>
+      <div class="spinner-container">
+        <div class="spinner" id="spinner"></div>
+      </div>
+      <img
+        class="image"
+        id="image"
+        src="http://via.placeholder.com/256x256"
+        alt=""
+      />
+      <!-- ./assets/pictures/1024picture.png -->
+    </div>
+  </body>
+  <script src="./src/renderer.js"></script>
+</html>

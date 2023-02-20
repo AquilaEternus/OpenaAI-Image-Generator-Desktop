@@ -1,0 +1,14 @@
+{
+  "name": "openaai-image-generator-desktop",
+  "version": "1.0.0",
+  "description": "Desktop frontend application for OpenAI's Image Generator made with electron.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Jose Hernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.2.0"
+  }
+}
